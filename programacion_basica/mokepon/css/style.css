@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+body{
+	font-family: 'Carter One', cursive;
+	background-color: #E1FFB1;
+}
+*{
+	padding: 0px;
+    box-sizing: border-box;
+    border: 0px solid darkblue;
+}
+
+#seleccionar-mascota{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.titulo{
+	font-size: 90px;
+}
+.subtitulo{
+	font-size: 30px;
+}
+
+.tarjetas, .tarjetas-ataques{
+	display: flex;
+	gap: 10px; 
+
+}
+
+.caja-mokepones{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 109px;
+	background: #C7F2A4;
+	padding: 10px;
+	border-radius: 18px;
+}
+
+.caja-mokepones img{
+	width: 80px;
+}
+
+#boton-mascota{
+	width: 200px;
+    height: 55px;
+	background: #C7F2A4;
+	border-radius: 10px;
+	margin-top: 30px;
+	font-family: 'Carter One', cursive;
+
+}
+
+input{
+	display: none;
+}
+
+#seleccionar-ataque{
+	flex-direction: column;
+	align-items: center;
+}
+
+.boton-de-ataque{
+	cursor: pointer;
+	width: 200px;
+	height: 109px;
+	background: #C7F2A4;
+	padding: 10px;
+	border-radius: 18px;
+	font-family: 'Carter One', cursive;
+	font-size: 20px;
+}
+
+.click-boton:hover{
+	background-color: #9ed571 !important;
+}
+
+input:checked + label{
+	background-color: #9ed571 !important;
+}
+
+#mensaje{
+	width: 280px;
+	background: #C7F2A4;
+	padding: 20px;
+	margin-top: 20px;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+#boton-reiniciar{
+	background: #C7F2A4;
+	font-family: 'Carter One', cursive;
+	font-size: 20px;
+}
+
+.ataques{
+	display: grid;
+	grid-template-columns: 100px 100px;
+}
+
+.ataques-jugador, .ataques-enemigo{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@media(max-width:669px) {
+	.tarjetas, .tarjetas-ataques{
+		flex-direction: column;
+	}
+}
